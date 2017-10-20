@@ -110,4 +110,12 @@ public class TicketMachine
         System.out.println("# The price of a ticket is " + price + " cents. ");
     }
     
+    /**
+     * Este método extrae todo el dinero acumulado en la máquina
+     */
+    public void vaciar()
+    {
+        total = 0;
+    }
+    
 }
