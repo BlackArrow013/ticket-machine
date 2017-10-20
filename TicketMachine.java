@@ -48,6 +48,14 @@ public class TicketMachine
     }
 
     /**
+     * Debe devolver el valor total gastado en la máquina
+     */
+    public int getTotal()
+    {
+        return total;
+    }
+    
+    /**
      * Receive an amount of money from a customer.
      */
     public void insertMoney(int amount)
@@ -75,4 +83,21 @@ public class TicketMachine
         // Clear the balance.
         balance = 0;
     }
+    
+    /**
+     * Informa de que debe introducir la cantidad correcta de dinero.
+     */
+    public void prompt()
+    {
+        System.out.println("Please insert the correct amount of money. ");
+    }
+    
+    /**
+     * Informa al cliente sobre el precio del billete
+     */
+    public void showPrice()
+    {
+        System.out.println("# The price of a ticket is " + price + " cents. ");
+    }
+    
 }
